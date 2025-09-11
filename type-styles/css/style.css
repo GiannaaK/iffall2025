@@ -1,0 +1,111 @@
+html {
+    color: black;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 24px;
+}
+
+body {
+    line-height: 1.6;
+    margin: 40px;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    display: block;
+    font-size: 1rem;
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    color: #bbb;
+    display: block;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: .6rem;
+    color: #999;
+    display: block;
+    font-weight: 700;
+}
+
+.styledfont{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 30px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.note {
+    font-family: 'Arial', sans-serif;
+    font-size: 0.3rem;
+    color: #aaa;
+}
+
+.example {
+  margin-bottom: 1em;
+}
+
+.weight-normal {
+  font-weight: normal;
+}
+
+.weight-bold {
+  font-weight: bold;
+}
+
+.style-normal{
+    font-style: normal;
+}
+
+.style-italic{
+    font-style: italic;
+}
+
+.letterspacing-normal{
+    letter-spacing: normal;
+}
+
+.letterspacing-wide{
+    letter-spacing: 0.3em;
+}
+
+.letterspacing-close{
+    letter-spacing: -0.1em;
+}
+
+.texttransform-none{
+    text-transform: none;
+}
+
+.texttransform-upper{
+    text-transform: uppercase;
+}
+
+.texttransform-lower{
+    text-transform: lowercase;
+}
+
+.texttransform-capitalize{
+    text-transform: capitalize;
+}
+
+.textdeco-none{
+    text-decoration: none;
+}
+
+.textdeco-under{
+    text-decoration: underline;
+}
+
+.textdeco-linethrough{
+    text-decoration: line-through;
+}
+
+.textdeco-over{
+    text-decoration: overline;
+}

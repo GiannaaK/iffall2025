@@ -1,0 +1,141 @@
+html {
+    font-family: "Archivo Narrow", sans-serif;
+    background-color: #a7927f;
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding-top: 166px;
+    padding-bottom: 188px;
+    background-image: url(https://i.etsystatic.com/22147021/r/il/a76a9b/4421971664/il_fullxfull.4421971664_drrw.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+}
+
+h1 {
+    margin: 0;
+    font-size: 80px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 0;
+    margin-top: 16px;
+    line-height: 1;
+}
+
+p {
+    font-size: 18px;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+.box2 {
+    background-color: rgb(126, 99, 71);
+    color: white;
+    padding: 0.3em 17em 2em;
+}
+
+h3 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 31px;
+}
+
+.box3 h3, .box4 h3 {
+    margin-top: 0;
+    padding-top: 1em;
+}
+
+.box2 img {
+    float: right;
+    object-fit: cover;
+    object-position: center 90%;
+    width: 400px;
+    height: 300px;
+    border: 2px white solid;
+    margin-bottom: 30px;
+    margin-left: 35px;
+}
+
+.box3 {
+    padding: 0 17em;
+    padding-bottom: 5em;
+    background-color: rgb(58, 47, 33);
+    color: rgb(219, 210, 199);
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, auto);   
+    row-gap: 20px;
+    column-gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid_item {
+    display: flex;
+    align-items: center;
+}
+
+.grid_item img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 10px;
+    flex: 0 0 200px;
+}
+
+.text {
+    width: 200px;
+    flex: 1; 
+    min-width: 0;
+    border: 1px solid transparent;
+    padding: 0;
+    margin: -1px 0 4px 0;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.text p {
+    font-size: 18px;
+    align-self: start;
+    line-height: 25px;
+    width: 90%;
+    list-style-type: none;
+    margin-left: -1px;
+}
+
+
+.photo_title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.box4 {
+    padding: 0 25em 5em 25em;
+    background-color: rgb(147, 133, 113);
+    color: rgb(24, 20, 18);
+}
+
+.box4 p {
+    text-align: center;
+    font-size: 26px;
+    margin: 0;
+    margin-top: 16px;
+    line-height: 1.4;
+}
+
+.box5 {
+    background-color: rgb(207, 200, 185);
+    padding: 2em 19em;
+    font-size: 0.9em;
+}

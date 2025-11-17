@@ -1,0 +1,390 @@
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Orbitron", sans-serif;
+            background-color: #0a0a0a; 
+            color: #e0e0e0; 
+            margin: 0;
+            padding: 0;
+        }
+
+
+        header.hero {
+         text-align: center;
+         padding-top: 166px;
+         padding-bottom: 188px;
+         background-image: url(https://i.pinimg.com/1200x/08/59/e0/0859e077500f85aa48649de18e320613.jpg);
+         background-size: cover;
+         background-position: center center; 
+         background-repeat: no-repeat;
+         color:white;
+        }
+        
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.85); 
+            border-bottom: 1px solid #333;
+            padding: 1rem 5%; 
+            z-index: 100; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box; 
+        }
+
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            color: #aaa;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 300;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #fff; 
+        }
+
+
+        main {
+            padding-top: 70px; 
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto; 
+            padding: 5rem 0; 
+        }
+
+    
+        .hero h1 {
+            font-size: 4rem; 
+            font-weight: 700;
+            color: #fff;
+            margin: 0;
+            position: relative; 
+            animation: glitch-anim 3s infinite linear alternate-reverse;
+        }
+
+        .hero h1::before,
+        .hero h1::after {
+            content: 'XENOFEMINIST\A MANIFESTO'; 
+            white-space: pre; 
+            font-family: "Orbitron", sans-serif; 
+            font-size: 4rem;
+            font-weight: 700;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .hero h1::before {
+            left: 2px;
+            text-shadow: -2px 0 #00ffff; 
+            animation: glitch-before 3s infinite linear alternate-reverse;
+        }
+
+        .hero h1::after {
+            left: -2px;
+            text-shadow: -2px 0 #ff00ff; 
+            animation: glitch-after 3s infinite linear alternate-reverse;
+        }
+
+
+        @keyframes glitch-anim {
+            0% { transform: translate(0); }
+            20% { transform: translate(-1px, 1px); }
+            40% { transform: translate(-1px, -1px); }
+            60% { transform: translate(1px, 1px); }
+            80% { transform: translate(1px, -1px); }
+            100% { transform: translate(0); }
+        }
+
+        @keyframes glitch-before {
+            0% { clip-path: inset(0 0 0 0); }
+            5% { clip-path: inset(10% 0 85% 0); }
+            10% { clip-path: inset(90% 0 1% 0); }
+            15% { clip-path: inset(30% 0 60% 0); }
+            20% { clip-path: inset(0 0 0 0); }
+            80% { clip-path: inset(0 0 0 0); }
+            85% { clip-path: inset(50% 0 10% 0); }
+            90% { clip-path: inset(80% 0 5% 0); }
+            95% { clip-path: inset(40% 0 20% 0); }
+            100% { clip-path: inset(0 0 0 0); }
+        }
+
+        @keyframes glitch-after {
+            0% { clip-path: inset(0 0 0 0); }
+            5% { clip-path: inset(85% 0 10% 0); }
+            10% { clip-path: inset(1% 0 90% 0); }
+            15% { clip-path: inset(60% 0 30% 0); }
+            20% { clip-path: inset(0 0 0 0); }
+            80% { clip-path: inset(0 0 0 0); }
+            85% { clip-path: inset(10% 0 50% 0); }
+            90% { clip-path: inset(5% 0 80% 0); }
+            95% { clip-path: inset(20% 0 40% 0); }
+            100% { clip-path: inset(0 0 0 0); }
+        }
+
+ 
+        #intro {
+            border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
+        }
+
+        .intro-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem; 
+            align-items: center; 
+        }
+        
+        #intro h2 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+
+        #intro p {
+            font-family: "Stack Sans Text", sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.7; 
+        }
+
+        .intro-image {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .intro-image img {
+            width: 100%;
+            height: auto; 
+            max-height: 500px; 
+            aspect-ratio: 1 / 1; 
+            object-fit: cover; 
+            border-radius: 8px; 
+        }
+        
+   
+        #tenets {
+             border-bottom: 1px solid #333; 
+        }
+        
+        #tenets h2 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        .tenets-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .tenet-card {
+            background-color: #111;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 2.5rem; 
+            text-align: left; 
+            transition: all 0.3s ease; 
+        }
+        
+        .tenet-card:hover {
+            border-color: #aaa;
+            transform: translateY(-5px);
+        }
+
+        .tenet-number {
+            display: block;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #ffffff; 
+            margin-bottom: 0.5rem;
+        }
+
+        .tenet-card h3 {
+            font-size: 1.5rem;
+            font-style: oblique;
+            color: #fff;
+            margin-top: 0; 
+            margin-bottom: 1rem;
+        }
+
+        .tenet-card p {
+            font-family:"Stack Sans Text", sans-serif;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #aaa;
+        }
+
+        #evolution {
+            background-image: 
+                linear-gradient(to right, rgba(68, 68, 68, 0.2) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(68, 68, 68, 0.2) 1px, transparent 1px);
+            background-size: 40px 40px;
+            text-align: center;
+        }
+
+        #evolution h2 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 4rem;
+        }
+
+        .evolution-image {
+            width: 50%;
+            max-width: 400px; 
+            margin: 0 auto 4rem auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .evolution-image img {
+            width: 100%;
+            height: auto; 
+            object-fit: contain; 
+        }
+
+        .timeline {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .timeline-event {
+            text-decoration: none;
+            color: #aaa;
+            font-weight: 300;
+            padding: 1.5rem; 
+            border: 1px solid #555; 
+            border-radius: 8px;
+            background-color: rgba(10, 10, 10, 0.8);
+            transition: all 0.3s ease;
+            flex-basis: 300px;
+            flex-grow: 1;
+            display: flex; 
+            align-items: flex-start; 
+            gap: 1.5rem; 
+            text-align: left; 
+        }
+        
+        .timeline-event:hover {
+            color: #fff;
+            border-color: #00ffff; 
+            transform: translateY(-5px); 
+            box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2); 
+        }
+
+        .timeline-icon { 
+            flex-shrink: 0;
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #222;
+        }
+
+        .timeline-icon img { 
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .timeline-content { 
+            flex-grow: 1;
+        }
+
+        .timeline-content span { 
+            display: block;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-content h4 { 
+            margin: 0 0 0.75rem 0;
+            font-size: 1.15rem;
+            color: #fff;
+            font-weight: 700;
+        }
+        
+        .timeline-content p { 
+            font-family:"Stack Sans Text", sans-serif;
+            margin: 0;
+            font-size: 0.9rem;
+            color: #aaa;
+            line-height: 1.5;
+        }
+
+      
+        .site-footer {
+          text-align: center;
+          padding: 50px;
+          background-color: #050505; 
+          border-top: 1px solid rgba(255, 255, 255, 0.1);
+          color: #aaa; 
+        }
+
+        .footer-logo {
+          font-size: 2rem;
+          font-weight: 700;
+          margin-bottom: 20px;
+          text-shadow: 1px 0 #00F0FF, -1px 0 #FF005D;
+          color: #fff;
+        }
+        
+        .footer-links p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        
+   
+        @media (max-width: 768px) {
+            .hero h1,
+            .hero h1::before,
+            .hero h1::after {
+                font-size: 3rem; 
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .intro-layout {
+                grid-template-columns: 1fr; 
+            }
+            
+            .evolution-image {
+                width: 80%; 
+            }
+
+            .timeline-event {
+                flex-basis: 100%; 
+            }
+        }
